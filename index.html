@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Get text from image</title>
+</head>
+<body>
+
+    <div class="main">
+            <h1>Get the text from the image!</h1>
+
+            <div class="search-img">
+        
+                
+                <input  type="file" accept="image/jpeg, image/png" id="img-input"></br>
+                <label for="img-input" id="lb-input">Select image</label><br>
+                <p id="path-p">...</p> <br>
+        
+                <button id="btn-read">Extract text</button><br>
+        
+                <textarea id="ta" rows="4" cols="50">
+               
+                </textarea> 
+            </div>
+    </div>
+    
+    
+    <script type="text/javascript" src='https://unpkg.com/tesseract.js@v2.0.0-beta.1/dist/tesseract.min.js'></script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
